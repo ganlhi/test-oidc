@@ -13,6 +13,21 @@
           "inlineTemplate": true,
           "inlineStyle": true,
           "spec": false
+        },
+        "@schematics/angular:service": {
+          "spec": false
+        },
+        "@schematics/angular:directive": {
+          "spec": false
+        },
+        "@schematics/angular:module": {
+          "spec": false
+        },
+        "@schematics/angular:pipe": {
+          "spec": false
+        },
+        "@schematics/angular:class": {
+          "spec": false
         }
       },
       "architect": {
