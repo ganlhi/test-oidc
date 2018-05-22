@@ -49,4 +49,14 @@ export class AuthService {
       this._user$.next(user);
     });
   }
+
+  startSignout(): Promise<void> {
+    return this._manager.signoutRedirect();
+  }
+
+  completeSignout(): Promise<void> {
+    return this._manager.signoutRedirectCallback().then(user => {
+      this._user$.next(undefined);
+    });
+  }
 }
